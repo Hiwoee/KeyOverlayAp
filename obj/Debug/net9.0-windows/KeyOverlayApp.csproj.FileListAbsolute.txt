@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlayApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlayApp.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlayApp.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlayApp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\bin\Debug\net9.0-windows\KeyOverlayApp.exe
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\bin\Debug\net9.0-windows\KeyOverlayApp.deps.json
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\bin\Debug\net9.0-windows\KeyOverlayApp.runtimeconfig.json
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\bin\Debug\net9.0-windows\KeyOverlayApp.dll
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\bin\Debug\net9.0-windows\KeyOverlayApp.pdb
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlayApp.dll
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\refint\KeyOverlayApp.dll
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlayApp.pdb
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlayApp.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\ref\KeyOverlayApp.dll
