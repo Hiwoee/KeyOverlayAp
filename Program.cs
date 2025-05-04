@@ -64,6 +64,7 @@ namespace KeyOverlay
         private Label? keyLabel;
         private System.Windows.Forms.Timer? updateTimer;
 
+        //silliest way to construct
         public Form1()
         {
             InitializeComponent();
@@ -182,7 +183,6 @@ namespace KeyOverlay
         {
             if (keyCache.TryGetValue(keyCode, out var name))
                 return name;
-            //maybe there is a better way to do this
             name = keyCode switch
             {
                 0x01 => "LMB",
