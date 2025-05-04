@@ -73,6 +73,7 @@ namespace KeyOverlay
         private void SetupOverlay()
         {
             //Icon = new Icon("icon.ico");
+            DoubleBuffered = true; //dont know if needed yet
             ShowInTaskbar = false;
 
             Form form1 = new()
@@ -148,13 +149,12 @@ namespace KeyOverlay
             DwmSetWindowAttribute(Handle, DWMWA_WINDOW_CORNER_PREFERENCE, ref preference, sizeof(int));
         }
 
-
+        //kept the same function will change it shows in order
         private void UpdateKeys(object? sender, EventArgs e)
         {
             if (keyLabel == null) return;
 
             StringBuilder pressedKeys = new();
-            //need to make it keys show in order later on
             for (int keyCode = 0; keyCode <= 255; keyCode++)
             {
                 if ((GetAsyncKeyState(keyCode) & 0x8000) != 0)
@@ -169,19 +169,25 @@ namespace KeyOverlay
                 }
             }
 
-            keyLabel.Text = pressedKeys.ToString();
+            string newText = pressedKeys.ToString();
+            if (keyLabel.Text != newText)
+            {
+                keyLabel.Text = newText;
+            }
         }
+
+        private static readonly Dictionary<int, string> keyCache = new();
+
         private static string GetKeyName(int keyCode)
         {
-            if (keyCode >= 0x41 && keyCode <= 0x5A)
-                return ((char)keyCode).ToString();
-            if (keyCode >= 0x30 && keyCode <= 0x39)
-                return ((char)keyCode).ToString();
+            if (keyCache.TryGetValue(keyCode, out var name))
+                return name;
             //maybe there is a better way to do this
-            return keyCode switch
+            name = keyCode switch
             {
                 0x01 => "LMB",
                 0x02 => "RMB",
+                0x09 => "Tab",
                 0x20 => "Space",
                 0x0D => "Enter",
                 0x1B => "Esc",
@@ -205,8 +211,12 @@ namespace KeyOverlay
                 0x78 => "F9",
                 0x79 => "F10",
                 0x7A => "F11",
+                >= 0x30 and <= 0x39 => ((char)keyCode).ToString(),
+                >= 0x41 and <= 0x5A => ((char)keyCode).ToString(),
                 _ => "",
             };
+            keyCache[keyCode] = name;
+            return name;
         }
     }
     static class Program

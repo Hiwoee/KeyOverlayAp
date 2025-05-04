@@ -12,3 +12,4 @@ C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windo
 C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlay.pdb
 C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlay.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\ref\KeyOverlay.dll
+C:\Users\Administrator\Desktop\Terminal\key\KeyOverlayApp\obj\Debug\net9.0-windows\KeyOverlay.sourcelink.json
